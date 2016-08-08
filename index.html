@@ -23,7 +23,6 @@ mixpanel.init("0831ecdd48bfdc8de696a4ee82af64f4");</script><!-- end Mixpanel -->
 		function addNewWord() {
 			alert("This doesn't work yet! Sorry!");
 			mixpanel.track("addWord");
-			// TODO: add message saying this isn't working yet.
 		}
 	</script>
 
@@ -32,7 +31,7 @@ mixpanel.init("0831ecdd48bfdc8de696a4ee82af64f4");</script><!-- end Mixpanel -->
 			var mainBody = document.getElementById("main");
 			var word = "test";
 			mainBody.innerHTML += "<h2>" + word + "</h2>";
-			mixpanel.track("loadWord", {"word"; word});
+			mixpanel.track("loadWord", {"word": word});
 		}
 
 		function bodyLoad() {
