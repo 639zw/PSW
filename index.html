@@ -30,6 +30,9 @@ mixpanel.init("0831ecdd48bfdc8de696a4ee82af64f4");</script><!-- end Mixpanel -->
 
 	<script type="text/javascript">
 		function loadWord() {
+			$.get("words.txt", function(data) {
+				alert(data);
+			});
 			var mainBody = document.getElementById("main");
 			var word = "test";
 			mainBody.innerHTML += "<h2>" + word + "</h2>";
